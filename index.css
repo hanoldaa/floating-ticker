@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box; }
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible; }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); } }
+
+.ticker-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 40px;
+  background-color: rgba(24, 23, 23, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box; }
+  .ticker-wrap .ticker {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s; }
+    .ticker-wrap .ticker__item {
+      display: inline-block;
+      padding: 0 1.5rem;
+      font-size: 1rem;
+      color: #e2e2e2; }
+    .ticker-wrap .ticker__item.up {
+      color: #91c236; }
+    .ticker-wrap .ticker__item.down {
+      color: #ce3232; }
+
+#close {
+  right: 0;
+  font-weight: 700;
+  font-size: 12px; }
+
+#drag {
+  right: 68px;
+  box-shadow: -2px 0 8px black;
+  -webkit-app-region: drag; }
+
+#edit, #confirm {
+  right: 34px; }
+
+img {
+  position: fixed;
+  top: 0;
+  width: 34px;
+  height: 40px;
+  background-color: #222;
+  color: #ccc;
+  cursor: pointer; }
+
+input {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 40px;
+  /* Firefox */
+  width: -moz-calc(100% - 102px);
+  /* WebKit */
+  width: -webkit-calc(100% - 102px);
+  /* Opera */
+  width: -o-calc(100% - 102px);
+  /* Standard */
+  width: calc(100% - 102px); }
+
+html, body {
+  padding-left: 0;
+  margin: 0; }
+
+body {
+  padding-left: 0;
+  height: 40px; }
+
+h1, h2, p {
+  padding: 0 5%; }
+
+::-webkit-scrollbar {
+  display: none; }
