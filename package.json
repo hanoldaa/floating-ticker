@@ -30,7 +30,7 @@
   "devDependencies": {
     "electron": "^7.0.0",
     "electron-builder": "^21.2.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "jQuery": "^1.7.4"
