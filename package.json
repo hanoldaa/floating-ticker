@@ -28,7 +28,7 @@
   "author": "Andrew McClain Hanold",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^7.0.0",
+    "electron": "^13.6.6",
     "electron-builder": "^21.2.0",
     "node-sass": "^4.13.0"
   },
